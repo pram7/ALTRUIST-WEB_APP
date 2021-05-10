@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width-device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="signUp.css">
+        <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+        <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+        <title>Altruistic</title>
+    </head>
+<body>
+  <!-- <nav>
+    <a href="index.html"><img src="logo1.jpg"  id="logo"></a>
+          <ul>
+          <li><a href="signUp.html">SignUp</a></li>
+          <li  ><a href="chats.html">Chats</a></li>
+          <li ><a href="profile.html">Profile</a></li>
+          <li ><a href="ngoList.html">NGO</a></li>
+           <li ><a href="#">Support</a></li> 
+          <li ><a href="getInTouch.html">GetInTouch</a></li> 
+           <li class="button"><button class="btn-toggle">Toggle</button></li> 
+          </ul>
+  </nav> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sign In</h5>
+              <form class="form-signin">
+                <div class="form-label-group">
+                  <input type="email" id="email" class="form-control" placeholder="email address" required autofocus>
+                  <label for="email">Email address</label>
+                </div>
+  
+                <div class="form-label-group">
+                  <input type="password" id="password" class="form-control" placeholder="Password" required>
+                  <label for="password">Password</label>
+                </div>
+  
+                <div class="custom-control custom-checkbox mb-3">
+                  <!-- <input type="checkbox" class="custom-control-input" id="customCheck1"> -->
+                  <!-- <label class="custom-control-label" for="customCheck1">Remember password</label> -->
+                </div>
+                <button onclick="signUp()" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" id="signUp">Log in</button>
+                <!-- <hr class="my-4"> -->
+                <!-- <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+                <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="signUp.js"></script>
+  </body>
+</html>
